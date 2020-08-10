@@ -1,0 +1,16 @@
+for(int i=0;i<fog.length;i++){
+            int reqCounter = fog[i].reqCounter;
+            for(int j=0;j<reqCounter;j++){
+                if(fog[i].endTime[j]!=null && fog[i].getEndTime(j).compareTo(new GregorianCalendar()) < 0){
+                    fog[i].reqCounter--;
+                    fog[i].startTime[j] = null;
+                    fog[i].endTime[j] = null;
+                }
+            }
+            if(fog[i].reqCounter<4){
+                fog[i].flag = false;
+            }
+        }
+
+System.out.println("The request_" + i + " has been allocated to fogNode_" + k + "...[" + condition + "]" );
+System.out.println("The request_" + i + " has been allocated to cloud...[" + condition + "]");

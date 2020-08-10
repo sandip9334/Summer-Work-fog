@@ -1,0 +1,4 @@
+In this the request is generated at run time instead of reading from a datafile. Also the total number of fognodes are fixed.
+The request will be generated after every random time interval ranging from 0-1000 ms.
+The logic of that is in timeGenerator(). The upper bound can be changed in Main at line 71.
+This also has the cloud utilisation display.
