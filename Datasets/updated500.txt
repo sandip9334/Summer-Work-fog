@@ -1,3 +1,4 @@
+Request Id, Node ID( not used), Resource Requirement( not used), Starttime, Duration, Priority(0-Non C,1-crtical), Longitude, Latitude, Process Type( resource requirement covered in process tye)
 0,1,4,0,1.4,1,14,10,2
 1,0,3,0,3.1,0,19,5,1
 2,0,3,0,1.6,0,3,20,1
